@@ -72,7 +72,7 @@ $$  re|aver \rightarrow
 **Handling dataset limitations:** only the targeted affixes are considered.
 
 $$  a|moral \rightarrow
-    A_1 M_0 O_0 R_0 A_0 L \rightarrow
+    A_1 MORAL \rightarrow
     [1] $$
 
 $$  amoral|ismo \rightarrow
