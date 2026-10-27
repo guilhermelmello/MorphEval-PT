@@ -53,40 +53,39 @@ As inherited from MorphyNet, the dataset does not contains the complete morpheme
 
 **Full Binary Classification:** Not every morpheme boundary is explicitly marked. This can lead to misinterpretations.
 
-- $
-    a|moral \rightarrow
+$$  a|moral \rightarrow
     A_1 M_0 O_0 R_0 A_0 L \rightarrow
-    [1,0,0,0,0]$
-- $
-    amoral|ismo \rightarrow
+    [1,0,0,0,0] $$
+
+$$  amoral|ismo \rightarrow
     A_0 M_0 O_0 R_0 A_0 L_1 I_0 S_0 M_0 O \rightarrow
-    [0,0,0,0,0,1,0,0,0]$
-- $
-    infiltr|ada|s \rightarrow
+    [0,0,0,0,0,1,0,0,0] $$
+
+$$  infiltr|ada|s \rightarrow
     I_0 N_0 F_0 I_0 L_0 T_1 R_0 A_0 D_0 A_1 S \rightarrow
-    [0,0,0,0,0,1,0,0,0,1]$
-- $
-    re|aver \rightarrow
+    [0,0,0,0,0,1,0,0,0,1] $$
+
+$$  re|aver \rightarrow
     R_0 E_1 A_0 V_0 E_0 R \rightarrow
-    [0,1,0,0,0]$
+    [0,1,0,0,0] $$
     
 **Handling dataset limitations:** only the targeted affixes are considered.
 
-- $
-    a|moral \rightarrow
+$$  a|moral \rightarrow
     A_1 M_0 O_0 R_0 A_0 L \rightarrow
-    [1]$
-- $    amoral|ismo \rightarrow
+    [1] $$
+
+$$  amoral|ismo \rightarrow
     AMORA L_1 I_0 S_0 M_0 O \rightarrow
-    [1,0,0,0]$
-- $
-    infiltr|ada|s \rightarrow
+    [1,0,0,0] $$
+
+$$  infiltr|ada|s \rightarrow
     INFILT_1 R_0 A_0 D_0 A_1 S \rightarrow
-    [1,0,0,0,1]$
-- $
-    re|aver \rightarrow
+    [1,0,0,0,1] $$
+
+$$  re|aver \rightarrow
     R_0 E_1 AVER \rightarrow
-    [0,1]$
+    [0,1] $$
 
 ### Usage:
 
