@@ -1,0 +1,29 @@
+[project]
+name = "morpheval-pt"
+version = "1.0.0"
+description = "A lightweight framework to evaluate the morphological coherence of LLM tokenizers for Brazilian Portuguese"
+readme = "README.md"
+authors = [
+    { name = "Guilherme L. Mello", email = "guilhermelmello@yahoo.com.br" }
+]
+requires-python = ">=3.12.11"
+dependencies = [
+    "transformers>=5.21.0",
+]
+
+[project.scripts]
+derivational = "main:derivational"
+inflectional = "main:inflectional"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = ""
+
+[dependency-groups]
+dev = [
+    "ipython>=9.17.1",
+    "pyenchant>=3.3.0",
+]

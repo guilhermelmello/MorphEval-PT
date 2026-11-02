@@ -89,19 +89,26 @@ $$  re|aver \rightarrow
 
 ### Usage:
 
+After cloning this repository, run the command `uv sync` to install MorphEval-PT dependencies.
+
+To run the derivational evaluation:
 ```bash
-python morpheval.py --derivation --model-name=[MODEL_NAME]
+uv run derivational --model-name=[MODEL_NAME]
 ```
-or 
+
+To run de inflectional evaluation:
 ```bash
-python morpheval.py --inflection --model-name=[MODEL_NAME]
+uv run inflectional --model-name=[MODEL_NAME]
 ```
+
+It is also possible to directly run the command  `python main.py` script with the following parameters.
 
 **Parameters**
 
-- `--inflection`: Selects the inflectional dataset for evaluation
-- `--derivation`: Selects the derivational dataset for evaluation
+- `--inflection`: Selects the inflectional dataset for evaluation.
+- `--derivation`: Selects the derivational dataset for evaluation.
 - `--model-name`: this value is directly passed to [AutoTokenizer.from_pretrained](https://huggingface.co/docs/transformers/main/en/model_doc/auto#transformers.AutoTokenizer.from_pretrained) and can be either a local path or the id of a tokenizer hosted on [huggingface.co](https://huggingface.co/).
+- `--file-path`: to use a custom TSV dataset. This dataset must follow the same format as inflectional or derivational files.
 
 
 
